@@ -8,24 +8,30 @@ ul {
     background-color: rgb(rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
   }
   
-    /* Stijl voor de menubalk */
-    .menubalk {
-      background-color: gray;
-      color: black;
-      display: flex;
-      justify-content: space-around;
-      padding: 10px;
-    }
-  
-    /* Stijl voor de menu-items */
-    .menubalk a {
-      color: black;
-      text-decoration: none;
-      padding: 10px;
-    }
-  
-    /* Stijl voor het actieve menu-item */
-    .menubalk a.active {
-      font-weight: bold;
-    }
+      /* Stijl voor de menubalk */
+  .menubalk {
+    background-color: gray;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  /* Stijl voor de menu-items */
+  .menubalk a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Overgangseffect voor achtergrondkleur */
+  }
+
+  .menubalk a:hover {
+    background-color: darkgray; /* Kleur bij hover */
+    color: black; /* Tekstkleur bij hover */
+  }
+
+  /* Stijl voor het actieve menu-item */
+  .menubalk a.active {
+    font-weight: bold;
+  }
   
