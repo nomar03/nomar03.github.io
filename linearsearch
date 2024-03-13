@@ -1,0 +1,41 @@
+<head>
+    <body>
+        <script>
+    var zoekGetal, i;
+    var getallenRij = new Array(10);
+
+    for (i = 0; i <= 9; i++) {
+        getallenRij[i] = Math.floor(Math.random() * 100);
+
+        // Hier zorg je dat je een getallenrij krijgt van 10 getallen. En die getallen zijn tussen de 1 en 100
+    }
+    window.alert("Welk getal wil je zoeken: ");
+
+    // Hierzo wordt er gevraagd welk getal je zoek, en die moet je invullen
+    zoekGetal = Number(window.prompt('Enter a value for zoekGetal'));
+    i = 0;
+
+    // Wat moet er in de WHILE-lus komen om het algoritme te laten werken?
+    while (getallenRij[i] != zoekGetal && i < 9) {
+        i = i + 1;
+
+        // hier gaat het alle getallen af om jou getal te zoeken. En dat doet het door telkens de index +1 te doen.
+    }
+    if (i == 9) {
+        if (zoekGetal == getallenRij[9]) {
+            window.alert(zoekGetal.ToString() + " staat op plek " + i);
+
+            // hij is alle getallen langs gegaan en heeft het getal wat je zoekt helaass niet gevonden.
+        } else {
+            window.alert("Getal niet gevonden.");
+
+            // hij is alle getallen langs gegaan en heeft het getal wat je zoekt gevonden.
+        }
+    } else {
+        window.alert(zoekGetal.ToString() + " staat op plek " + i);
+
+        // hij is alle getallen langs gegaan en heeft het getal wat je zoekt gevonden.
+    }
+        </script>
+    </body>
+</head>
