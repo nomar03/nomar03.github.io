@@ -70,9 +70,9 @@ ul {
 {
     position: relative;
     height: 30px;
-    background: #999999;
+    background: #ff0000;
 }
-.second-level-menu > li:hover { background: #CCCCCC; }
+.second-level-menu > li:hover { background: #002fff; }
 
 .top-level-menu
 {
@@ -87,9 +87,9 @@ ul {
     float: left;
     height: 30px;
     width: 150px;
-    background: #999999;
+    background: hsl(308, 100%, 61%);
 }
-.top-level-menu > li:hover { background: #CCCCCC; }
+.top-level-menu > li:hover { background: #f7f325; }
 
 .top-level-menu li:hover > ul
 {
